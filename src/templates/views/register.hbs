@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Express APP</title>
+    {{>header}}
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    {{>navbar}}
+   <section>
+        <div class="container pt-5 mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-5 border p-5 bg-light col-11">
+                <h4 class="text-dark mb-4">Register Now</h4>
+                <form id="signupForm" method="post" accept-charset="UTF-8" action="register">
+                   
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa-solid fa-user icon-2x"></i></span>
+                        <input id="name" class="form-control input-lg" placeholder="Name" 
+                            type="text" name="name" value="">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa-solid fa-envelope icon-2x"></i></span>
+                        <input id="email" class="form-control input-lg" placeholder="Email"  type="email"
+                            name="email"  value="">
+                    </div>
+                     <div class="input-group">
+                        <span class="input-group-addon"><i class="fa-solid fa-phone icon-2x"></i></span>
+                        <input id="phone" class="form-control input-lg" placeholder="Phone"  type="text"
+                            name="phone"  value="">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa-solid fa-lock icon-2x"></i></span>
+                        <input id="password" class="form-control input-lg" placeholder="Password"
+                            type="password" name="password" value="">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa-solid fa-lock icon-2x"></i></span>
+                        <input id="cpassword" class="form-control input-lg" placeholder="Confirm Password"
+                            type="password" name="cpassword" value="">
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <button type="submit" id="btn-signup" class="btn btn-block btn-dark btn-md">Sign Up</button>
+                    </div>
+                </form>
+                <div class="form-group mt-3">
+                    <div class="topCushion">Already a member? <a href="/">Login</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+
+    {{>footer}}
+
+</body>
+
+</html>

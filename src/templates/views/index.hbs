@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Express APP</title>
+    {{>header}}
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+    {{>navbar}}
+<div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-lg-7 text-center text-lg-start">
+        <img src="images/studentImg.png" alt="cover image" class="img-fluid mb-2">
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5">
+
+            <form id="signupForm" class="p-4 p-md-5 border rounded-3 bg-light" method="post" accept-charset="UTF-8" action="/">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control shadow-none" id="email" name="email" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control shadow-none" id="password" name="password" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+          <button class="w-100 btn btn-lg btn-info text-white" type="submit">Sign In</button>
+          <hr class="my-4">
+          <small class="text-muted">Already have an account ? <a href="/register">Click Here</a> </small>
+        </form>
+      </div>
+    </div>
+  </div>
+    {{>footer}}
+
+</body>
+</html>
